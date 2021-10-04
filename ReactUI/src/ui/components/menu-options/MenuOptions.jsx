@@ -10,7 +10,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import AutorenewIcon from "@material-ui/icons/Autorenew";
 import HomeIcon from "@material-ui/icons/Home";
 import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
 
 const useStyles = makeStyles((theme) => ({
 	toolbar: theme.mixins.toolbar,
@@ -33,16 +32,14 @@ const useStyles = makeStyles((theme) => ({
 
 const MenuOptions = () => {
 	const classes = useStyles();
-	const [t, i18n] = useTranslation("global");
-
 	const testContent = [
 		{
-			title: t("sidebar.home"),
+			title: ("home"),
 			icon: <HomeIcon style={{ color: "#fff" }} />,
 			path: "/home",
 		},
 		{
-			title: t("MultiTrivia"),
+			title: ("MultiTrivia"),
 			icon: <AutorenewIcon style={{ color: "#fff" }} />,
 			path: "/MultiTrivia",
 		},			

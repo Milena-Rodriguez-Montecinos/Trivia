@@ -4,16 +4,11 @@ import {
 	Toolbar,
 	Typography,
 	makeStyles,
-	IconButton,
-	MenuItem,
 	Switch,
-	Menu,
 	Avatar,
 } from "@material-ui/core";
 import AccountCircle from "@material-ui/icons/AccountCircle";
 import { withStyles } from "@material-ui/core/styles";
-import LanguageIcon from "@material-ui/icons/Language";
-import { useTranslation } from "react-i18next";
 
 const drawerWidth = 240;
 const useStyle = makeStyles((theme) => ({
@@ -39,29 +34,6 @@ const useStyle = makeStyles((theme) => ({
 
 const NavBar = (props) => {
 	const classes = useStyle();
-	const [ i18n] = useTranslation("global");
-	const [language, setLanguage] = React.useState("En");
-	const [anchorE2, setAnchorE2] = React.useState(null);
-	const open = Boolean(anchorE2);
-
-	const handleMenuLanguage = (event) => {
-		setAnchorE2(event.currentTarget);
-	};
-
-	const handleCloseLanguage = () => {
-		setAnchorE2(null);
-	};
-	const handleCloseLanguageEs = () => {
-		setLanguage("Es");
-		i18n.changeLanguage("es");
-		setAnchorE2(null);
-	};
-	const handleCloseLanguageEn = () => {
-		setLanguage("En");
-		i18n.changeLanguage("en");
-		setAnchorE2(null);
-	};
-
 	const AntSwitch = withStyles((theme) => ({
 		root: {
 			width: 28,
@@ -103,39 +75,6 @@ const NavBar = (props) => {
 					<Typography variant="h4" className={classes.title} noWrap>
 						MultiTrivia
 					</Typography>
-					<div>
-						<IconButton
-							aria-label="account of current user"
-							aria-controls="menu-appbar"
-							aria-haspopup="true"
-							onClick={handleMenuLanguage}
-							color="inherit"
-						>
-							<LanguageIcon /> {language}
-						</IconButton>
-						<Menu
-							id="menu-appbar"
-							anchorEl={anchorE2}
-							anchorOrigin={{
-								vertical: "top",
-								horizontal: "right",
-							}}
-							keepMounted
-							transformOrigin={{
-								vertical: "top",
-								horizontal: "right",
-							}}
-							open={open}
-							onClose={handleCloseLanguage}
-						>
-							<MenuItem onClick={handleCloseLanguageEn}>
-								En
-							</MenuItem>
-							<MenuItem onClick={handleCloseLanguageEs}>
-								Es
-							</MenuItem>
-						</Menu>
-					</div>
 					<div>
 						<Avatar
 							className={classes.AccountCircle}
