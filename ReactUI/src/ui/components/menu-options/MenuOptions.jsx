@@ -38,6 +38,8 @@ const MenuOptions = () => {
 			icon: <HomeIcon style={{ color: "#fff" }} />,
 			path: "/home",
 		},
+
+		
 		{
 			title: ("MultiTrivia"),
 			icon: <AutorenewIcon style={{ color: "#fff" }} />,
