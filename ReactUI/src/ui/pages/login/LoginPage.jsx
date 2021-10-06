@@ -78,11 +78,6 @@ const Login = (props) => {
 						<CssBaseline />
 						<Paper className={`${classes.paper} paperLogin`}>
 							<h1 className={`snifferTitle`}>MULTI TRIVIA</h1>
-							<video
-								className={classes.avatar}
-								alt="dog"
-								src="https://res.cloudinary.com/marcandea/video/upload/v1631739192/samples/AT_-_14_bryiub.mp4"
-							></video>
 							<form className={classes.form} noValidate>
 								<TextField
 									variant="outlined"
