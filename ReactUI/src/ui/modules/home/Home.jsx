@@ -35,7 +35,7 @@ const Home = () => {
 							component="img"
 							alt="MultiTrivia"
 							width="100%"
-							image="/Flag_of_Bolivia.png"
+							image="/ROBOT-cutout.png"
 							title="Contemplative Reptile"
 						/>
 					</Card>
