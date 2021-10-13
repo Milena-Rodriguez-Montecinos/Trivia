@@ -26,36 +26,6 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
-app.post('/compiler', upload.single('file'), async (req, res) => {
-
-    const url = new Url({name: 'test1', url: 'file path'});
-    url.save();
-    
-    let langCompiler = {};
-    let binary = '';
-
-    if (req.body.language === 'python') {
-        binary = process.env.EXECUTE_PYTHON32;
-    } else {
-        binary = process.env.EXECUTE_JAVA8;
-    }
-    try {
-        langCompiler = CompilerFactory.getInstance(
-            req.body.language,
-            req.file.path,
-            binary
-        );
-        const result = await langCompiler.compiler();
-        res.send(result);
-    } catch (err) {
-        res.status(err.status).send({
-            message: err.message,
-            type: err.name,
-            code: err.code
-        });
-    }
-});
-
 const port = process.env.PORT || 8082;
 
 app.listen(port, () => console.info('server running...'));
