@@ -5,7 +5,7 @@ const app = express();
 const mongoose = require('mongoose');
 require("dotenv").config();
 
-conexionString = 'mongodb://' + process.env.IP_MONGO + ':27018/converterDB';
+conexionString = 'mongodb://' + process.env.IP_MONGO + ':27018/TRIVIA';
 
 mongoose.connect(conexionString,{ useNewUrlParser: true, useUnifiedTopology: true })
     .then(db => console.log('Db is connected to', db.connection.host))
