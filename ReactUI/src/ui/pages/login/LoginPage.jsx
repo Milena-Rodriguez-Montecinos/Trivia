@@ -22,12 +22,12 @@ const Login = (props) => {
 
 	const logginSuccess = (res) => {
 		props.setIsLogin(true);
-		props.history.push("/home");
+		props.history.push("/informacion");
 		props.setUserInfo(res.profileObj);
 	};
 
 	const logginFailure = (res) => {
-		console.log("Failed loggin:", res);
+		console.log("Inicio de sesion fallido:", res);
 		props.setIsLogin(false);
 	};
 
@@ -52,7 +52,7 @@ const Login = (props) => {
 			textAlign: "center",
 		},
 		font: {
-			color: "#11a0bd",
+			img: "#11a0bd",
 		},
 		title: {
 			flexGrow: 1,
@@ -84,10 +84,10 @@ const Login = (props) => {
 									margin="normal"
 									required
 									fullWidth
-									id="email"
-									label="Email Address"
-									name="email"
-									autoComplete="email"
+									id="Correo Electronico"
+									label="Direccion de correo electronico"
+									name="Correo electronico"
+									autoComplete="correo electronico"
 									autoFocus
 									value={body.email}
 									onChange={handleChange}
@@ -97,10 +97,10 @@ const Login = (props) => {
 									margin="normal"
 									required
 									fullWidth
-									name="password"
-									label="Password"
-									type="password"
-									id="password"
+									name="contrasena"
+									label="Contrasena"
+									type="contrasena"
+									id="contrasena"
 									autoComplete="current-password"
 									value={body.password}
 									onChange={handleChange}
@@ -113,15 +113,15 @@ const Login = (props) => {
 									variant="contained"
 									color="primary"
 									className={classes.button}
-									onClick={() => props.history.push("/home")}
+									onClick={() => props.history.push("/informacion")}
 								>
-									Login
+									Iniciar Sesion
 								</Button>
 								<Divider component="li" variant="inset" />{" "}
 								<GoogleLogin
 									className="googleLogin"
 									clientId="726629848709-g7mmqrelcc0fauka4vfimnbl16tvp2q5.apps.googleusercontent.com"
-									buttonText="Login"
+									buttonText="Inicio de sesion"
 									onSuccess={logginSuccess}
 									onFailure={logginFailure}
 									cookiePolicy={"single_host_origin"}

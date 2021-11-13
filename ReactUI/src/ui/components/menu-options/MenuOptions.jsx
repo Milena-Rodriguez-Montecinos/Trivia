@@ -7,9 +7,12 @@ import {
 	Divider,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import AutorenewIcon from "@material-ui/icons/Autorenew";
 import HomeIcon from "@material-ui/icons/Home";
 import { Link } from "react-router-dom";
+import ExtensionIcon from '@mui/icons-material/Extension';
+import SchoolIcon from '@mui/icons-material/School';
+import AppsIcon from '@mui/icons-material/Apps';
+import DirectionsRunIcon from '@mui/icons-material/DirectionsRun';
 
 const useStyles = makeStyles((theme) => ({
 	toolbar: theme.mixins.toolbar,
@@ -34,17 +37,34 @@ const MenuOptions = () => {
 	const classes = useStyles();
 	const testContent = [
 		{
-			title: ("home"),
-			icon: <HomeIcon style={{ color: "#fff" }} />,
-			path: "/home",
+			title: ("Informacion"),
+			icon: <HomeIcon style={{ color: "#5fbaab",  fontSize: 40 }} />,
+			path: "/informacion",
 		},
 
-		
 		{
-			title: ("MultiTrivia"),
-			icon: <AutorenewIcon style={{ color: "#fff" }} />,
-			path: "/MultiTrivia",
-		},			
+			title: ("Crucigrama"),
+			icon: <AppsIcon style={{ color: "#965fba",  fontSize: 40  }} />,
+			path: "/Crucigrama",
+		},		
+
+		{
+			title: ("Rompecabezas"),
+			icon: <ExtensionIcon style={{ color: "#bd9179",  fontSize: 40 }} />,
+			path: "/Puzzle",
+		},
+
+		{
+			title: ("Preguntados"),
+			icon: <SchoolIcon style={{ color: "#756cf0",  fontSize: 40  }} />,
+			path: "/Preguntados",
+		},
+
+		{
+			title: ("Ahorcado"),
+			icon: <DirectionsRunIcon style={{ color: "#ab534b",  fontSize: 40  }} />,
+			path: "/Ahorcado",
+		}
 	];
 
 	return (

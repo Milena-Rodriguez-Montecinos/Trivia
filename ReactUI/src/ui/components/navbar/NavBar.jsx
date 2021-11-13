@@ -14,7 +14,7 @@ const drawerWidth = 240;
 const useStyle = makeStyles((theme) => ({
 	offset: theme.mixins.toolbar,
 	appBar: {
-		backgroundColor: "#5c93d6",
+		backgroundColor: "#4f94c9",
 		[theme.breakpoints.up("sm")]: {
 			width: "100%",
 			marginLeft: drawerWidth,
@@ -72,7 +72,7 @@ const NavBar = (props) => {
 		<div className={classes.root}>
 			<AppBar position="fixed" className={classes.appBar}>
 				<Toolbar>
-					<Typography variant="h4" className={classes.title} noWrap>
+					<Typography variant="h2" className={classes.title} noWrap>
 						MultiTrivia
 					</Typography>
 					<div>
