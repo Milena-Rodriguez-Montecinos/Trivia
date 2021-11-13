@@ -1,0 +1,35 @@
+[
+    {
+        "categoria": "Geografía de Bolivia",
+        "pregunta": "¿Cuál es el cerro más alto de Bolivia?",
+        "respuesta": "Sajama",
+        "incorrecta1": "Illampu",
+        "incorrecta2": "Illimani",
+        "incorrecta3": "Everest",
+        "objectFit": "contain",
+        "respuesta_correcta":"Respuesta correcta: ¡Bien allí! Sigue adelante",
+        "respuesta_incorrecta":"Mal ahi, tienes que revisar más."
+    },
+    {
+        "categoria": "Historia de Bolivia",
+        "pregunta": "¿Cuando es la fecha de independencia de Bolivia?",
+        "respuesta": "6 de agosto de 1825",
+        "incorrecta1": "26 de febrero de 1814",
+        "incorrecta2": "14 de septiembre de 1811",
+        "incorrecta3":"13 de mayo de 1815",
+        "objectFit": "contain",
+        "respuesta_correcta":"Respuesta correcta: ¡Excelente!",
+        "respuesta_incorrecta":"Respuesta incorrecta: Toca estudiar un poco más."
+    },
+    {
+        "categoria": "Ciencia y Tecnología",
+        "pregunta": "¿Cuál es la unidad más pequeña del organismo?",
+        "respuesta": "La célula",
+        "incorrecta1": "Ninguno",
+        "incorrecta2": "El átomo",
+        "incorrecta3": "Los riñones",
+        "objectFit": "contain",
+        "respuesta_correcta":"Respuesta correcta: ¡Estas cuchillo!",
+        "respuesta_incorrecta":"Toca repasar conceptos"
+    }
+]
