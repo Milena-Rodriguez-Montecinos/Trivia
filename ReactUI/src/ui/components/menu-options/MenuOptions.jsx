@@ -45,25 +45,25 @@ const MenuOptions = () => {
 		{
 			title: ("Crucigrama"),
 			icon: <AppsIcon style={{ color: "#965fba",  fontSize: 40  }} />,
-			path: "/Crucigrama",
+			path: "/crucigrama",
 		},		
 
 		{
 			title: ("Rompecabezas"),
 			icon: <ExtensionIcon style={{ color: "#bd9179",  fontSize: 40 }} />,
-			path: "/Puzzle",
+			path: "/rompecabezas",
 		},
 
 		{
 			title: ("Preguntados"),
 			icon: <SchoolIcon style={{ color: "#756cf0",  fontSize: 40  }} />,
-			path: "/Preguntados",
+			path: "/preguntados",
 		},
 
 		{
 			title: ("Ahorcado"),
 			icon: <DirectionsRunIcon style={{ color: "#ab534b",  fontSize: 40  }} />,
-			path: "/Ahorcado",
+			path: "/ahorcado",
 		}
 	];
 

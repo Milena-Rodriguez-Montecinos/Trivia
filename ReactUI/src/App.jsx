@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import HomePage from "./ui/pages/Home/HomePage";
-import GamePage from "./ui/pages/game/GamePage";
+import InformationPage from "./ui/pages/Information/InformationPage";
+import AhorcadoPage from "./ui/pages/Ahorcado/ahorcadoPage";
+import CrucigramaPage from "./ui/pages/Crucigrama/crucigramaPage";
+import PreguntadosPage from "./ui/pages/Preguntados/preguntadosPage"
+import RompecabezasPage from "./ui/pages/Rompecabezas/rompecabezasPage"
 import LoginPage from "./ui/pages/login/LoginPage";
 
 const App = () => {
@@ -23,16 +26,49 @@ const App = () => {
 				/>
 				<Route
 					exact
-					path="/Home"
+					path="/informacion"
 					component={(props) => (
-						<HomePage imageURL={userInfo.imageUrl} />
+						<InformationPage imageURL={userInfo.imageUrl} />
 					)}
 				/>
 				<Route
 					exact
-					path="/MultiTrivia"
+					path="/ahorcado"
 					component={(props) => (
-						<GamePage
+						<AhorcadoPage
+							isLogin={isLogin}
+							history={props.history}
+							imageURL={userInfo.imageUrl}
+						/>
+					)}
+				/>
+				<Route
+					exact
+					path="/crucigrama"
+					component={(props) => (
+						<CrucigramaPage
+							isLogin={isLogin}
+							history={props.history}
+							imageURL={userInfo.imageUrl}
+						/>
+					)}
+				/>
+				<Route
+					exact
+					path="/preguntados"
+					component={(props) => (
+						<PreguntadosPage
+							isLogin={isLogin}
+							history={props.history}
+							imageURL={userInfo.imageUrl}
+						/>
+					)}
+				/>
+				<Route
+					exact
+					path="/rompecabezas"
+					component={(props) => (
+						<RompecabezasPage
 							isLogin={isLogin}
 							history={props.history}
 							imageURL={userInfo.imageUrl}

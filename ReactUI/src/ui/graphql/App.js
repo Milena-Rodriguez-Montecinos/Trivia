@@ -31,7 +31,7 @@ function App() {
     <ApolloProvider client={client}>
       <Breadcrumbs aria-label="breadcrumb">
 				<Link color="inherit" href="/" onClick={""}>
-          {("home")}
+          {("information")}
 				</Link>
 				<Typography color="textPrimary">{(" MultiTrivia ")}</Typography>
 			</Breadcrumbs>

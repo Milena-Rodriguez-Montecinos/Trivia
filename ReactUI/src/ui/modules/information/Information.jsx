@@ -17,7 +17,7 @@ const styles = makeStyles((theme) => ({
 	},
 }));
 
-const Home = () => {
+const Informacion = () => {
 	const classes = styles();
 	return (
 		<div className={classes.root}>
@@ -45,4 +45,4 @@ const Home = () => {
 	);
 };
 
-export default Home;
+export default Informacion;
