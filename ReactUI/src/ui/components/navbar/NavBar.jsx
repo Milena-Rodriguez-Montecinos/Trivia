@@ -4,17 +4,15 @@ import {
 	Toolbar,
 	Typography,
 	makeStyles,
-	Switch,
 	Avatar,
 } from "@material-ui/core";
 import AccountCircle from "@material-ui/icons/AccountCircle";
-import { withStyles } from "@material-ui/core/styles";
 
 const drawerWidth = 240;
 const useStyle = makeStyles((theme) => ({
 	offset: theme.mixins.toolbar,
 	appBar: {
-		backgroundColor: "#4f94c9",
+		backgroundColor: "#8993eb",
 		[theme.breakpoints.up("sm")]: {
 			width: "100%",
 			marginLeft: drawerWidth,
@@ -34,45 +32,12 @@ const useStyle = makeStyles((theme) => ({
 
 const NavBar = (props) => {
 	const classes = useStyle();
-	const AntSwitch = withStyles((theme) => ({
-		root: {
-			width: 28,
-			height: 16,
-			padding: 0,
-			display: "flex",
-		},
-		switchBase: {
-			padding: 2,
-			color: theme.palette.grey[500],
-			"&$checked": {
-				transform: "translateX(12px)",
-				color: theme.palette.common.white,
-				"& + $track": {
-					opacity: 1,
-					backgroundColor: theme.palette.primary.main,
-					borderColor: theme.palette.primary.main,
-				},
-			},
-		},
-		thumb: {
-			width: 12,
-			height: 12,
-			boxShadow: "none",
-		},
-		track: {
-			border: `1px solid ${theme.palette.grey[500]}`,
-			borderRadius: 16 / 2,
-			opacity: 1,
-			backgroundColor: theme.palette.common.white,
-		},
-		checked: {},
-	}))(Switch);
 
 	return (
 		<div className={classes.root}>
 			<AppBar position="fixed" className={classes.appBar}>
 				<Toolbar>
-					<Typography variant="h2" className={classes.title} noWrap>
+					<Typography variant="h2" className={classes.title}  noWrap>
 						MultiTrivia
 					</Typography>
 					<div>

@@ -1,48 +1,49 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { makeStyles } from "@material-ui/core";
-import Grid from "@material-ui/core/Grid";
-import Card from "@material-ui/core/Card";
-import CardMedia from "@material-ui/core/CardMedia";
+import { makeStyles } from "@material-ui/core/styles";
+import Typography from "@material-ui/core/Typography";
+import PropTypes from "prop-types";
+import Box from "@material-ui/core/Box";
 
-const styles = makeStyles((theme) => ({
-	root: {
-		display: "flex",
+const useStyles = makeStyles(() => ({
+	paper: {},
+	input: {
+		display: "none",
 	},
-	toolbar: theme.mixins.toolbar,
-	content: {
-		flexGrow: 1,
-		backgroundColor: theme.palette.background.default,
-		padding: theme.spacing(3),
+	title: {
+		color: "white",
+		fontSize: 14,
+		backgroundColor: "#3a4651"
 	},
 }));
 
-const Informacion = () => {
-	const classes = styles();
+const TabPanel = (props) => {
+	const { children, value, index, ...other } = props;
+
 	return (
-		<div className={classes.root}>
-			<Grid
-				container
-				spacing={0}
-				direction="column"
-				alignItems="center"
-				justify="center"
-				style={{ minHeight: "100vh" }}
-			>
-				<Grid item xs={12}>
-					<Card>
-						<CardMedia
-							component="img"
-							alt="MultiTrivia"
-							width="100%"
-							image="/ROBOT-cutout.png"
-							title="Contemplative Reptile"
-						/>
-					</Card>
-				</Grid>
-			</Grid>
+		<div
+			role="tabpanel"
+			hidden={value !== index}
+			id={`full-width-tabpanel-${index}`}
+			aria-labelledby={`full-width-tab-${index}`}
+			{...other}
+		>
+			{value === index && (
+				<Box p={3}>
+					<Typography>{children}</Typography>
+				</Box>
+			)}
 		</div>
 	);
+};
+
+TabPanel.propTypes = {
+	children: PropTypes.node,
+	index: PropTypes.any.isRequired,
+	value: PropTypes.any.isRequired,
+};
+
+const Informacion = () => {
+	const classes = useStyles();
 };
 
 export default Informacion;

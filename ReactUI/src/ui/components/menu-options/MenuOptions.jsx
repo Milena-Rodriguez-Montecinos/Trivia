@@ -13,6 +13,7 @@ import ExtensionIcon from '@mui/icons-material/Extension';
 import SchoolIcon from '@mui/icons-material/School';
 import AppsIcon from '@mui/icons-material/Apps';
 import DirectionsRunIcon from '@mui/icons-material/DirectionsRun';
+import ExitToAppSharpIcon from '@mui/icons-material/ExitToAppSharp';
 
 const useStyles = makeStyles((theme) => ({
 	toolbar: theme.mixins.toolbar,
@@ -64,6 +65,12 @@ const MenuOptions = () => {
 			title: ("Ahorcado"),
 			icon: <DirectionsRunIcon style={{ color: "#ab534b",  fontSize: 40  }} />,
 			path: "/ahorcado",
+		},
+	
+		{
+			title: ("Cerrar Sesion"),
+			icon: <ExitToAppSharpIcon style={{ color: "#ffffff",  fontSize: 40 }} />,
+			path: "/",
 		}
 	];
 

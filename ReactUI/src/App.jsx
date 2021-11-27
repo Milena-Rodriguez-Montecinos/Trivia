@@ -6,6 +6,7 @@ import CrucigramaPage from "./ui/pages/Crucigrama/crucigramaPage";
 import PreguntadosPage from "./ui/pages/Preguntados/preguntadosPage"
 import RompecabezasPage from "./ui/pages/Rompecabezas/rompecabezasPage"
 import LoginPage from "./ui/pages/login/LoginPage";
+import LoginCreate from "./ui/pages/login/loginCreate";
 
 const App = () => {
 	const [isLogin, setIsLogin] = useState(false);
@@ -21,6 +22,16 @@ const App = () => {
 							setIsLogin={setIsLogin}
 							history={props.history}
 							setUserInfo={setUserInfo}
+						/>
+					)}
+				/>
+				<Route
+					exact
+					path="/Create"
+					component={(props) => (
+						<LoginCreate
+							setIsLogin={setIsLogin}
+							history={props.history}
 						/>
 					)}
 				/>
@@ -50,6 +61,7 @@ const App = () => {
 							isLogin={isLogin}
 							history={props.history}
 							imageURL={userInfo.imageUrl}
+							
 						/>
 					)}
 				/>
@@ -81,3 +93,4 @@ const App = () => {
 };
 
 export default App;
+

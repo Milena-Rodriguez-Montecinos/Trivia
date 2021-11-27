@@ -12,7 +12,7 @@ const useStyles = makeStyles(() => ({
 	title: {
 		color: "white",
 		fontSize: 14,
-		backgroundColor: "#ffffff"
+		backgroundColor: "#3a4651"
 	},
 }));
 
@@ -42,8 +42,8 @@ TabPanel.propTypes = {
 	value: PropTypes.any.isRequired,
 };
 
-const Preguntados = () => {
+const Rompecabezas = () => {
 	const classes = useStyles();
 };
 
-export default Preguntados;
+export default Rompecabezas;
