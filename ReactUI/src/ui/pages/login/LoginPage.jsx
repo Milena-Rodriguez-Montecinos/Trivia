@@ -2,15 +2,17 @@ import {
 	makeStyles,
 	Paper,
 	CssBaseline,
+	Typography,
 	TextField,
 	Button,
 	Divider,
-	Grid,
+	Grid
 } from "@material-ui/core";
 import GoogleLogin from "react-google-login";
-import { useState } from "react";
 import "./LoginPage.css";
+import Link from '@material-ui/core/Link';
 import Breadcrumbs from "@material-ui/core/Breadcrumbs";
+import { useState } from "react";
 
 
 const Login = (props) => {
@@ -64,22 +66,22 @@ const Login = (props) => {
 
 	return (
 		<div>
-			<ul className="circles">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<Grid container className={`loginContainer`}>
-					<Grid item xs={12}>
-						<CssBaseline />
-						<Paper className={`${classes.paper} paperLogin`}>
-							<h1 className={`snifferTitle`}>MULTI TRIVIA</h1>
+			<Grid container className={`loginContainer`}>
+				<Grid item xs={12}>
+					<CssBaseline />
+					<Paper className={`${classes.paper} paperLogin`}>
+						<Breadcrumbs aria-label="breadcrumb">
+							<Link color="inherit" href="/" >
+								Iniciar Sesion
+							</Link>
+							<Typography color="textPrimary"></Typography>
+						</Breadcrumbs>
+						<Breadcrumbs aria-label="breadcrumb">
+							<Link color="inherit" href="/Create">
+								Registrarse
+							</Link>
+							</Breadcrumbs>
+							<h1 className={`snifferTitle`}>MultiTrivia</h1>
 							<form className={classes.form} noValidate>
 								<TextField
 									variant="outlined"
@@ -132,7 +134,6 @@ const Login = (props) => {
 						</Paper>
 					</Grid>
 				</Grid>
-			</ul>
 		</div>
 	);
 };
