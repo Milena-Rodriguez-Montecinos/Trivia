@@ -1,0 +1,123 @@
+[
+    {
+        "categoria": "Ciencia y Tecnología",
+        "pregunta": "¿Cuántos días tiene un año bisiesto?",
+        "respuesta": "366 días",
+        "incorrecta1": "367 días",
+        "incorrecta2": "365 días",
+        "incorrecta3": "364 días",
+        "objectFit": "contain",
+        "respuesta_correcta": "Respuesta correcta: ¡Bien allí! Sigue adelante",
+        "respuesta_incorrecta": "Respuesta incorrecta: Creo que alguien necesita repasar sus cuadernos."
+    },
+    {
+        "categoria": "Geografía",
+        "pregunta": "¿Cuál es la montaña más alta de Bolivia?",
+        "respuesta": "Sajama",
+        "incorrecta1": "Illimani",
+        "incorrecta2": "Chaupi Orco",
+        "incorrecta3": "Illampu",
+        "objectFit": "contain",
+        "respuesta_correcta": "Respuesta correcta: ¡Excelente!",
+        "respuesta_incorrecta": "Respuesta incorrecta: Mmm.... No. El Sajama es el más alto con 6541 metros de altura."
+    },
+    {
+        "categoria": "Historia",
+        "pregunta": "¿Cuál es la fecha de la independencia de Bolivia?",
+        "respuesta": "6 de agosto de 1825",
+        "incorrecta1": "29 de enero de 1825",
+        "incorrecta2": "14 de septiembre de 1810",
+        "incorrecta3": "26 de octubre de 1824",
+        "objectFit": "contain",
+        "respuesta_correcta": "Respuesta correcta: ¡Excelente!",
+        "respuesta_incorrecta": "Respuesta incorrecta: Alguien necesita repasar más acerca de su país."
+    },
+    {
+        "categoria": "Ciencia y Tecnología",
+        "pregunta": "¿Cuál es la unidad básica y funcional más pequeña del cuerpo humano?",
+        "respuesta": "La célula",
+        "incorrecta1": "El átomo",
+        "incorrecta2": "La molécula",
+        "incorrecta3": "Los órganos",
+        "objectFit": "contain",
+        "respuesta_correcta": "Respuesta correcta: ¡Bien allí! Sigue adelante",
+        "respuesta_incorrecta": "Respuesta incorrecta: Toca estudiar un poco más"
+    },
+    {
+        "categoria": "Ciencia y Tecnología",
+        "pregunta": "¿Cómo se llama la teoría que considera que todos los organismos descendemos del mismo ancestro?",
+        "respuesta": "Darwinismo",
+        "incorrecta1": "Creacionismo",
+        "incorrecta2": "Gradualismo",
+        "incorrecta3": "Ninguna de las otras 3",
+        "objectFit": "contain",
+        "respuesta_correcta": "Respuesta correcta: ¡Bien allí! Sigue adelante",
+        "respuesta_incorrecta": "Respuesta incorrecta: Toca estudiar un poco más"
+    },
+    {
+        "categoria": "Ciencia y Tecnología",
+        "pregunta": "La fuerza física que la Tierra o el Sol ejerce sobre los cuerpos hacia su centro es la:",
+        "respuesta": "Gravedad",
+        "incorrecta1": "Rozamiento",
+        "incorrecta2": "Normal",
+        "incorrecta3": "Manzana de Newton",
+        "objectFit": "contain",
+        "respuesta_correcta": "Respuesta correcta: ¡Bien allí! Sigue adelante",
+        "respuesta_incorrecta": "Respuesta incorrecta: Toca estudiar un poco más"
+    },
+    {
+        "categoria": "Ciencia y Tecnología",
+        "pregunta": "La luz viaja a una velocidad de:",
+        "respuesta": "300 km/s",
+        "incorrecta1": "300 m/s",
+        "incorrecta2": "30000 km/s",
+        "incorrecta3": "250 km/s",
+        "objectFit": "contain",
+        "respuesta_correcta": "Respuesta correcta: ¡Bien allí! Sigue adelante",
+        "respuesta_incorrecta": "Respuesta incorrecta: Toca estudiar un poco más"
+    },
+    {
+        "categoria": "Ciencia y Tecnología",
+        "pregunta": "¿Cuál fue la fuente de energía que se implementó en Bolivia para ampliar la cobertura de la red eléctrica?",
+        "respuesta": "Eólica",
+        "incorrecta1": "Hidráulica",
+        "incorrecta2": "Solar",
+        "incorrecta3": "Hidrocarburos",
+        "objectFit": "contain",
+        "respuesta_correcta": "Respuesta correcta: ¡Bien allí! Sigue adelante",
+        "respuesta_incorrecta": "Respuesta incorrecta: Toca estudiar un poco más"
+    },
+    {
+        "categoria": "Ciencia y Tecnología",
+        "pregunta": "El 10 de diciembre del 2013 Bolivia puso en órbita su primer satélite, el cuál fue denominado como:",
+        "respuesta": "Túpac Katari",
+        "incorrecta1": "Satélite 1",
+        "incorrecta2": "Túpac Amaru",
+        "incorrecta3": "Bartolina Sisa",
+        "objectFit": "contain",
+        "respuesta_correcta": "Respuesta correcta: ¡Bien allí! Sigue adelante",
+        "respuesta_incorrecta": "Respuesta incorrecta: Toca estudiar un poco más"
+    },
+    {
+        "categoria": "Ciencia y Tecnología",
+        "pregunta": "¿Cuál es el nombre de nuestra Galaxia?",
+        "respuesta": "Vía Láctea",
+        "incorrecta1": "Andrómeda",
+        "incorrecta2": "Enana del Can mayor",
+        "incorrecta3": "CR7",
+        "objectFit": "contain",
+        "respuesta_correcta": "Respuesta correcta: ¡Bien allí! Sigue adelante",
+        "respuesta_incorrecta": "Respuesta incorrecta: Toca estudiar un poco más"
+    },
+    {
+        "categoria": "Geografía",
+        "pregunta": "¿Cuál es el salar más grande de Bolivia y del Mundo?",
+        "respuesta": "Salar de Thunupa",
+        "incorrecta1": "Salar de Coipasa",
+        "incorrecta2": "Salar de Chiguana",
+        "incorrecta3": "Salar de Ollagüe",
+        "objectFit": "contain",
+        "respuesta_correcta": "Respuesta correcta: ¡Bien allí! Sigue adelante",
+        "respuesta_incorrecta": "Respuesta incorrecta: Toca estudiar un poco más"
+    }
+]
