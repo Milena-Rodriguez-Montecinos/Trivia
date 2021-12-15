@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de Trivia</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <div id="estado">
+    <table style=" margin: 0 auto;">
+      <tr>
+        <td>
+          <p class="elije">MATERIA ALEATORIA: </p>
+        </td>
+        <br>
+        <br>
+      </tr>
+      <tr>
+        <td>
+        <br>
+          <p class="contador">TURNOS: 0</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="vara"></div>
+  <div id="contenedorRespuestas" style="display:none;">
+      <h1 id="pregunta" ></h1>
+      <br>
+      <br>
+      <form id="repuestas">  
+        <label class="container">
+          <input type="radio" id="resp1" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">
+          <input type="radio" id="resp2" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">
+          <input type="radio" id="resp3" name="radio">
+          <span class="checkmark"></span>
+        </label>
+      <form>
+  </div>
+
+  <div >
+    <img src="image/imagen.png" id="ruleta">
+  </div>
+
+  <div>
+    <div id="sonido" style="display: none;">
+      <iframe src="sonido/ruleta.mp3" id="audio"></iframe>
+    </div>
+  </div>
+
+  <script src="js/sweetalert.js"></script>
+  <script src="js/datos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
